@@ -1,0 +1,7 @@
+def media_numeros():
+    numeros = input("Digite uma série de números separados por espaço: ").split()
+    numeros = [float(num) for num in numeros]
+    media = sum(numeros) / len(numeros)
+    return media
+
+print("Média dos números inseridos:", media_numeros())
