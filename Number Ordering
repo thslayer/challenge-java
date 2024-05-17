@@ -1,0 +1,7 @@
+def ordenar_numeros():
+    numeros = input("Digite uma série de números separados por espaço: ").split()
+    numeros = [int(num) for num in numeros]
+    numeros.sort()
+    return numeros
+
+print("Números ordenados:", ordenar_numeros())
