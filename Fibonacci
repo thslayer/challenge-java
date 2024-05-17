@@ -1,0 +1,8 @@
+def fibonacci(n):
+    fib = [0, 1]
+    for i in range(2, n):
+        fib.append(fib[-1] + fib[-2])
+    return fib
+
+numero = int(input("Digite um número para gerar a série de Fibonacci: "))
+print("Série de Fibonacci até", numero, ":", fibonacci(numero))
